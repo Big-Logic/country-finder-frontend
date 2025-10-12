@@ -12,7 +12,7 @@ const AuthProvider = ({ children }) => {
   // This function accepts both null & regular objects
   function storeLoginedUser(obj) {
     if (typeof obj !== "object") {
-      throw new AppError("obj must be an object");
+      throw new AppError("obj must be an object or null");
     }
 
     setloginedUser(obj);

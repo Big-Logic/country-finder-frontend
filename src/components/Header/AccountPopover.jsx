@@ -31,9 +31,9 @@ const AccountPopover = () => {
   return (
     <Popover>
       <Popover.Button customStyles={buttonStyles}>
-        <Username>{loginedUser["first_name"]}</Username>
+        {/* <Username>{loginedUser["first_name"]}</Username> */}
         <UserImage>
-          <img src={loginedUser["image_url"] || avatar} alt="Alfred" />
+          {/* <img src={loginedUser["image_url"] || avatar} alt="Alfred" /> */}
         </UserImage>
       </Popover.Button>
       <Popover.Content>Hi There</Popover.Content>

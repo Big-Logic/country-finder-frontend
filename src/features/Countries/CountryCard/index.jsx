@@ -11,7 +11,6 @@ import CommentButton from "./CommentButton";
 
 const CountryCard = ({ country }) => {
   const { flags, name, region, flag, capital } = country;
-  console.log(country);
   return (
     <CD.Container>
       <CD.ImageContainer>

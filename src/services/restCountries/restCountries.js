@@ -1,5 +1,16 @@
 const ENDPOINT = "https://restcountries.com/v3.1/";
 
+export const getRestCountriesByRegion = async (region) => {
+  try {
+    const res = await fetch(`${ENDPOINT}region/${region}`);
+    // Convert all responses to JSON
+    const data = await res.json();
+    return data;
+  } catch (err) {
+    console.log(err);
+  }
+};
+
 export default async function getAllRestCountries() {
   const regions = [
     "africa",
