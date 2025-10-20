@@ -8,8 +8,10 @@ import * as CS from "./CountriesStyles";
 
 const Countries = () => {
   return (
-    <CS.Container>
-      <Filters />
+    <CS.Container id="rmd-id-123">
+      <CS.HeaderContainer>
+        <Filters />
+      </CS.HeaderContainer>
       <CountriesList />
       <CountriesPagination />
     </CS.Container>

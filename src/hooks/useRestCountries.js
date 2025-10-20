@@ -1,7 +1,7 @@
 import { useContext } from "react";
-import CountriesContext from "../providers/RestCountriesProvider/CountriesContext";
+import { CountriesContext } from "../providers/RestCountriesProvider";
 
-const useAllRestCountries = function () {
+const useRestCountries = function () {
   const { allRestCountries, currentPageItems, setCurrentPageItems } =
     useContext(CountriesContext);
 
@@ -14,4 +14,4 @@ const useAllRestCountries = function () {
   return { allRestCountries, currentPageItems, setCurrentPageItems };
 };
 
-export default useAllRestCountries;
+export default useRestCountries;

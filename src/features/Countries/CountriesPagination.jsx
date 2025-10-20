@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useSearchParams } from "react-router";
 
 // HOOKS
-import useAllRestCountries from "../../hooks/useAllRestCountries";
+import useRestCountries from "../../hooks/useRestCountries";
 
 // COMPONENTS
 import Pagination from "../../components/Pagination/Pagination";
@@ -13,7 +13,7 @@ import * as pu from "../../components/Pagination/paginationUtils";
 const itemsPerPage = 12;
 
 const CountriesPagination = () => {
-  const { allRestCountries, setCurrentPageItems } = useAllRestCountries();
+  const { allRestCountries, setCurrentPageItems } = useRestCountries();
   //
   const totalPages = pu.getTotalPages(allRestCountries, itemsPerPage);
   const [searchParams, setSearchParams] = useSearchParams({ page: "1" });

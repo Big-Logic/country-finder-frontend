@@ -1,11 +1,10 @@
 import Countries from "../features/Countries";
-import CountriesProvider from "../providers/RestCountriesProvider";
-
+import { RestCountriesProvider } from "../providers/RestCountriesProvider";
 const CountriesPage = () => {
   return (
-    <CountriesProvider>
+    <RestCountriesProvider>
       <Countries />
-    </CountriesProvider>
+    </RestCountriesProvider>
   );
 };
 
